@@ -1,0 +1,43 @@
+** Linear Regression ** 
+It derives the relationship between independent varibles and dependent varibles or in other words it finds out
+the cooefficients of the features.
+
+** Formulae:**
+y=mx+c 
+m--- slope
+x-- data point
+c-bias/intercept
+
+
+1------------Why squared error is used?-----------------
+A. The metric mean squared error is used to understand how our model is performing on the data points like whether it is 
+overfitting or underfitting.
+
+2-------------What minimizing the loss actually means----------------
+A. minimizing the loss actually means reducing the errors that the model is making by adjusting the parameters/
+weights of the model. by reducing the loss our model actually performs well.
+
+3----------------how the model parameters influence the loss------------------
+--If weights are poorly chosen -> predictions are far from true values -> large errors
+--Squaring these errors -> very high loss
+--Adjusting weights moves the line/curve
+--If the curve moves closer to data points -> errors decrease
+Lower errors -> lower loss
+
+4-------------------Why does training error always decrease with higher polynomial degree?----------
+A. as the degree increases gradually we can observe that the error reduces bcz the model starts fitting the data perfectly. it smoothens the curve.
+the model fixes the labels for the datapoints i.e it memorizes the answers
+
+5------------------Why does test error behave differently-------------------
+A. as the test data is unseen for the model it behaves differently bcz the model has learnt perfectly the X_train and y_train and 
+cant predict on unknown point as the model complexity is higher now
+
+6---------------At what point does the model start overfitting, and how can you tell?--------------
+A. as the degree of the polynomial features kept increasing the squared error was reducing indicating the overfitting of the points and labels
+and the error reduces to 0 gradually which means overfitting
+from the plot we can also observe that for higher degrees the line was following the sine curve perfectly.
+by these factors we can tell the model is overfitting.
+
+7----------------If you had to choose one polynomial degree, which would it be and why?-------------
+A. the one polynomial degree which i might choose is 2 or 3 where the model doesnt tend to overfit or underfit.
+it learns the patterns and finds the relationships rather than memorizing at that degree of polynomial.
