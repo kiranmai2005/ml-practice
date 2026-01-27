@@ -1,0 +1,20 @@
+1----------------Why does regularization improve test performance?----------------------
+A.regularization prevents the model from fitting the noise and improve generalization of the model.
+--like in the ridge it pulls/shrinks the value closer to 0 
+
+2----------------Why does Ridge keep all features but shrink them?-------------------------
+Ridge uses a L2 penalty to the coefficients which shrinks them towards to zero but doesnot set them exactly to zero.
+this way it helps the model by reducing the focus on less important features making it to less prone to overfitting.
+
+3--------------Why does Lasso remove features entirely?----------------------
+Lasso uses L1 penalty which encourages the model to shrink the coefficients to zero.by eliminating the less important
+features it improves the model's interpretability and prevents overfitting.
+
+4---------------Why does Elastic Net behave differently from both?---------------
+elastic net behave differently from both lasso and ridge because it combines the strength of the models.
+lasso reduces coefficients to zero which can be beneficial for feature selection.
+ridge shrinks coefficients to closer to zero but doesnot perform feature selection.
+
+5---------------Which model performed best on your dataset and why?----------------
+ridge regression performed best on diabetes dataset because it achieved lower test error with controlled model complexity
+and kept all the features.
