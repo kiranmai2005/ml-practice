@@ -1,0 +1,44 @@
+## Linear Regression Loss
+Function:
+*** Loss=MSE ===> 1​∑(y−y^​)2 ***
+
+1.What term is added?
+-Only the prediction error is minimized
+
+2.What does it encourage or discourage?
+-encourages the model to fit the training data
+-doesnot encourage large cooefficients
+
+3.how it affect on complexity and generalization?
+-model can assign large weights to features
+-sensitive to noise
+
+## Ridge Regression Loss
+Function:
+** Loss= MSE+λ∑w2 **
+
+1.What term is added?
+-L2 penalty (sum of squared coefficients)
+
+2.What does it encourage or discourage?
+-discourages large coefficient values
+-does not force to zero
+
+3.Effect on complexity and generalization
+-Controls model complexity by shrinking weights
+-reduces variance
+
+## Lasso Regression Loss
+Function:
+** Loss=MSE+λ∑∣w∣ **
+
+1.What term is added?
+-L1 penalty (sum of absolute values of coefficients)
+
+2.What does it encourage or discourage?
+-encourages the model to shrink the cooefficients to zero.
+
+3.Effect on complexity and generalization
+-performs automatic feature selection
+-reduces model complexity
+-removes irrelevant or redundant features
