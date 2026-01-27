@@ -1,4 +1,4 @@
-## Linear Regression Loss
+##----------------Linear Regression Loss-------------------
 Function:
 *** Loss=MSE ===> 1​∑(y−y^​)2 ***
 
@@ -13,7 +13,7 @@ Function:
 -model can assign large weights to features
 -sensitive to noise
 
-## Ridge Regression Loss
+##-----------------Ridge Regression Loss--------------------
 Function:
 ** Loss= MSE+λ∑w2 **
 
@@ -28,7 +28,7 @@ Function:
 -Controls model complexity by shrinking weights
 -reduces variance
 
-## Lasso Regression Loss
+##------------------Lasso Regression Loss-----------------------
 Function:
 ** Loss=MSE+λ∑∣w∣ **
 
